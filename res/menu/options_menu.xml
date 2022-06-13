@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:checkableBehavior="single">
+        <item 
+			android:id="@+id/menu_searchText"
+			android:checked="true"
+			android:title="Zoeken volgens tekst" />
+		<item 
+			android:id="@+id/menu_searchDate"
+			android:title="Zoeken volgens datum" />
+	</group>
+	<item 
+		android:id="@+id/menu_deleteList"
+		android:title="Verwijder volledige lijst" />
+</menu>
+<!--    -->
+<!--	android:showAsAction="collapseActionView|ifRoom"  -->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="vertical"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<SearchView
+			android:id="@+id/edittext"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/savebutton"
+			android:text="SAVE"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/button1"
+			android:text="(←)←" 
+			android:visibility="gone"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30dp" />
+		<Button
+			android:id="@+id/buttondate"
+			android:visibility="gone"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"  /> 
+		<Button
+			android:id="@+id/button2"
+			android:text="→(→)" 
+			android:visibility="gone"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		<LinearLayout
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+			<ListView
+				android:id="@+id/listview"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/calendarviewlayout"
+			android:visibility="gone"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+			<CalendarView
+				android:id="@+id/calendarview" 
+				android:background="#5A5554" 
+				android:layout_gravity="center_horizontal" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:firstDayOfWeek="2"
+				android:selectedWeekBackgroundColor="#DADF5A" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

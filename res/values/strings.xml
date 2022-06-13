@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoedselDagboek</string>
+	<string name="search_label">text</string>
+	<string name="settings_description">VoedselDagboek</string>
+	<string name="dialogtext1">Saven...</string>
+    <!-- The hint text that appears in the search box. -->
+    <string name="search_hint">Zoek in lijst</string>
+
+</resources>
